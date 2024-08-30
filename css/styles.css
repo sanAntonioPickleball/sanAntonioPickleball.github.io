@@ -10978,6 +10978,18 @@ header.tournaments {
   background-size: cover;
 }
 
+header.local {
+  padding-top: 10.5rem;
+  padding-bottom: 6rem;
+  text-align: center;
+  color: #fff;
+  background-image: url("../assets/img/header.png");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: cover;
+}
+
 header.masthead {
   padding-top: 10.5rem;
   padding-bottom: 6rem;
@@ -11434,4 +11446,34 @@ section#contact form#contactForm :-ms-input-placeholder {
 
 .contact-info a:hover {
   text-decoration: underline;
+}
+
+/* Styles for the text and images layout */
+.text-section {
+  padding-right: 15px; /* Optional padding for spacing */
+}
+
+.images-section {
+  padding-left: 15px; /* Optional padding for spacing */
+}
+
+/* Style for the images */
+.images-section img {
+  width: 100%;
+  height: 300px; /* Sets a consistent height for the image containers */
+  border-radius: 8px; /* Rounded corners for images */
+  transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+/* Different object-fit for different images */
+.images-section img.image1 {
+  object-fit: contain; /* Ensures the entire image fits within the container */
+}
+
+.images-section img.image2 {
+  object-fit: cover; /* Fills the container while maintaining aspect ratio */
+}
+
+.images-section img:hover {
+  transform: scale(1.05); /* Slight zoom on hover */
 }
