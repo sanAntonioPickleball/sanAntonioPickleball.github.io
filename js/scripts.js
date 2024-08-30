@@ -23,6 +23,25 @@ window.addEventListener('DOMContentLoaded', event => {
 
     };
 
+    document.addEventListener('DOMContentLoaded', function () {
+        const carouselInner = document.querySelector('#logoCarousel .carousel-inner');
+    
+        // Function to create a continuous scrolling effect
+        function continuousSlide() {
+            const firstClone = carouselInner.children[0].cloneNode(true); // Clone the first set of logos
+            carouselInner.appendChild(firstClone); // Append cloned logos to the end to create a loop
+    
+            // Adjust the animation speed and direction for a smoother loop
+            carouselInner.style.display = 'flex';
+            carouselInner.style.flexWrap = 'nowrap';
+            carouselInner.style.animation = 'slide 30s linear infinite';
+        }
+    
+        // Apply continuous sliding effect when the document is ready
+        continuousSlide();
+    });
+    
+
     // Shrink the navbar 
     navbarShrink();
 
