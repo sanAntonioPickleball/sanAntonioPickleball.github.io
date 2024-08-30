@@ -11477,42 +11477,14 @@ section#contact form#contactForm :-ms-input-placeholder {
 .images-section img:hover {
   transform: scale(1.05); /* Slight zoom on hover */
 }
-/* Ensure the carousel occupies only one row */
-.carousel-inner {
-  display: flex;
-  overflow: hidden; /* Hide overflow to ensure sliding effect */
-  white-space: nowrap; /* Prevent line breaks for continuous scrolling */
-  animation: slide 30s linear infinite; /* Smooth, continuous animation */
-}
 
-.carousel-item {
-  display: flex;
-  align-items: center;
-  width: 100%; /* Ensures each slide takes up full width */
-}
-
-.logo-row {
-  display: flex;
-  align-items: center;
-}
-
+/* Increased size for logo images */
 .logo-img {
-  height: 150px; /* Set a consistent height for all logos */
-  object-fit: contain; /* Maintain aspect ratio */
-  margin: 0 15px; /* Adds spacing between logos */
-  transition: transform 0.3s ease; /* Smooth hover effect */
+    max-width: 150px; /* Increase this value to make the logos larger */
+    max-height: 100px; /* Increase this value to maintain aspect ratio */
+    transition: transform 0.3s ease; /* Smooth hover effect */
 }
 
 .logo-img:hover {
-  transform: scale(1.1); /* Slight zoom on hover */
+    transform: scale(1.1); /* Slight zoom effect on hover */
 }
-
-@keyframes slide {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
-}
-
