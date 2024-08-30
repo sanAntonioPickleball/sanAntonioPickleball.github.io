@@ -11350,3 +11350,88 @@ section#contact form#contactForm :-ms-input-placeholder {
   font-size: 0.9rem;
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
+
+/* General styles for the tournaments section */
+.tournaments {
+  padding: 60px 0;
+  background-color: #f8f9fa;
+}
+
+.section-heading {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.section-date {
+  font-size: 1.2rem;
+  color: #777;
+  margin-bottom: 20px;
+}
+
+.item-intro {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.tournament-description {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* Sponsorship Opportunities Styling */
+.sponsorship-opportunities {
+  margin-top: 30px;
+  padding: 20px;
+}
+
+.sponsorship-level {
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.sponsorship-level:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  background-color: #ffd700; /* Yellow shade */
+  color: #fff;
+}
+
+.sponsorship-title {
+  font-size: 1.5rem;
+  color: #000;
+  margin-bottom: 10px;
+}
+
+.sponsorship-benefits {
+  list-style-type: disc;
+  padding-left: 20px;
+  color: #555;
+  line-height: 1.6;
+}
+
+.contact-info {
+  font-size: 1rem;
+  color: #555;
+}
+
+.contact-info a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
